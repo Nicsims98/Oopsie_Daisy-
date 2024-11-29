@@ -1,0 +1,6 @@
+Services:
+- Type: web
+Name: Oopsie Daisy
+runtime: python
+BuildCommand: python -m pip install -r requirements.txt
+StartupCommand: gunicorn app:app
